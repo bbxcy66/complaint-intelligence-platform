@@ -1,0 +1,38 @@
+raw_csv: src/data/raw/complaints.csv
+processed_parquet: src/data/processed/complaints_2024_3products.parquet
+splits_json: src/data/processed/splits.json
+
+start_date: "2024-01-01"
+end_date: '2026-03-01'
+
+date_col_candidates:
+  - Date received
+  - date_received
+
+text_col_candidates:
+  - Consumer complaint narrative
+  - complaint_what_happened
+  - narrative
+  - complaint_text
+  - text
+
+label_col_candidates:
+  - Product
+  - product
+
+# only keep these products
+products_keep:
+  - Money transfer, virtual currency, or money service
+  - Checking or savings account
+  - Credit card
+
+min_text_len: 30
+
+# big-data controls
+chunksize: 2000000
+max_rows: 1200000
+random_state: 42
+
+test_size: 0.15
+val_size: 0.15
+min_label_count: 50

@@ -1,0 +1,14 @@
+# virtual env
+.venv/
+__pycache__/
+**/__pycache__/
+
+# data
+src/data/raw/
+src/data/processed/
+
+# outputs (models + FAISS)
+outputs/
+
+# mac
+.DS_Store

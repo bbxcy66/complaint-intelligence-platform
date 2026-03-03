@@ -1,0 +1,16 @@
+numpy
+pandas
+scikit-learn
+tqdm
+matplotlib
+streamlit
+
+torch
+torchvision
+torchaudio
+
+transformers
+datasets
+accelerate
+
+python-dotenv
