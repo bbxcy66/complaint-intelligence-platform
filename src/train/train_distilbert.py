@@ -27,7 +27,7 @@ def main():
     out_dir = Path("outputs/models/distilbert_v1")
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Hyperparams (Mac-safe)
+    # Hyperparams
     model_name = "distilbert-base-uncased"
     max_length = 128
     batch_size = 4
@@ -35,7 +35,7 @@ def main():
     epochs = 1
     warmup_ratio = 0.1
 
-    # Subset for faster training (V1)
+    # Subset for faster training
     train_n = 40000
     val_n = 8000
 
